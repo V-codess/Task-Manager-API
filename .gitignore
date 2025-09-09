@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# Build output
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files (optional, add yours if using VSCode, WebStorm etc)
+.vscode/
+.idea/
+
+# Redis dump files (if any)
+dump.rdb
+
+# Optional coverage folder if using testing
+coverage/
