@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import taskRoutes from "./src/routes/taskManager";
 import database from './src/config/connectDB';
-// import {limiter} from "./src/middlewares/rateLimiter"
+import {limiter} from "./src/middlewares/rateLimiter"
 
 dotenv.config()
 const app = express();
@@ -11,7 +11,7 @@ const port = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
-// app.use(limiter);
+app.use(limiter);
 
 app.get("/", (req, res)=>{
     res.send("use /api to get the routes")
